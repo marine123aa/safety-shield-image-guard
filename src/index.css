@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,19 +36,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -98,4 +92,56 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.section-title {
+  @apply bg-yellow text-black py-3 px-4 font-bold text-lg;
+}
+
+.feature-section {
+  @apply border p-4 my-4 rounded-lg;
+}
+
+.date-input {
+  @apply border rounded-md p-2 w-28;
+}
+
+.table-container {
+  @apply mt-4 overflow-x-auto border rounded-lg;
+}
+
+.data-table {
+  @apply w-full text-sm;
+}
+
+.data-table th {
+  @apply bg-gray-100 text-left p-3 border-b;
+}
+
+.data-table td {
+  @apply p-3 border-b;
+}
+
+.yellow-button {
+  @apply bg-yellow text-black py-2 px-4 rounded-md font-medium hover:bg-yellow/90;
+}
+
+.blue-button {
+  @apply bg-blue text-white py-2 px-4 rounded-md font-medium hover:bg-blue/90;
+}
+
+.processing {
+  @apply text-blue-500 font-medium;
+}
+
+.completed {
+  @apply text-green-500 font-medium;
+}
+
+.category-button {
+  @apply px-4 py-2 rounded-md border bg-blue-light text-sm;
+}
+
+.category-button.active {
+  @apply bg-blue text-white;
 }
